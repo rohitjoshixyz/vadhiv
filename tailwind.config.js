@@ -3,9 +3,16 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}'
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "media", // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "certificate": "url('../public/certificate.png')",
+      },
+      fontFamily: {
+        damion: ["Damion-Regular", "cursive"],
+      }
+    },
   },
   variants: {
     extend: {},
